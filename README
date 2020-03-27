@@ -1,0 +1,20 @@
+Synopsis: The coronavirus pandemic has multiple health officials lecturing the population on what they can do to prevent infection. Among the advice given is to abstain from touching one's face. The creator of this device, as has been mentioned before, is admittedly somewhat forgetful. When pondering what his next project will be, he is prone to absent-mindedly touching his face. Worse yet, if he comes across a philosophical quandary, he is apt to occasionally stroke his chin, as if he were some unsanitary ancient Greek. One figures that most people are liable to touching their face subconsciously despite their otherwise stated intent.
+	
+	Enter this simple wearable device. By means of a tilt switch, the onboard ATTINY microcontroller can detect when a user's hand is in an upright position, which typically only occurs when the hand is reaching up to touch the face. A device for each hand is not necessary because of the predilection for most to use their dominant hand when touching their face. I suppose ambidextrous folks will have to either find another solution or wear two devices. Not that that would be an issue, since the device is inconspicuous and not cumbersome or obtrusive in any way. 
+	
+	The device notifies the wearer by means of one of two methods (this seems to be a common theme in my projects. One supposes this is a good thing since it makes the device more robust and adaptable). There is a buzzer, which will buzz annoyingly whenever the MCU detects an upwards tilt. However, this might ostensibly be annoying for some and discourage public usage, although this method is the most jarring and probably the most effective in reducing the subconscious behaviour (think negative reinforcement training). The other method, which is much more pleasant, is by use of a vibratory motor. Due to the vibratory motors current draw, an NPN transistor with higher current capabilities had to have its gate wired to an MCU pin. It also has a light up LED in either mode, because LEDs are cool. 
+
+	This is quite a simple device and the code is not very complicated at all, but the idea seemed cool. 
+
+Collaborators: Santiago Orellana
+
+Parts List:
+- ATTINY13A
+- tilt switch
+- 220 ohm resistor
+- LED
+- piezo buzzer
+- NPN transistor
+- cell battery
+- disk vibratory motor
+- two switches
